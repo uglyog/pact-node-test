@@ -4,4 +4,4 @@ const port = 3000
 
 app.get('/', (req, res) => res.send('Hello Pact World!'))
 
-app.listen(port, () => console.log(`Test app listening on port ${port}!`))
+module.exports = app

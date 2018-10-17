@@ -1,0 +1,14 @@
+{
+  "name": "pact-node",
+  "version": "0.0.0",
+  "description": "Pact Node with Rust",
+  "main": "lib/index.js",
+  "author": "Ronald Holshausen <uglyog@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.2.0"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}

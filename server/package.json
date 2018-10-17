@@ -2,13 +2,20 @@
   "name": "pact-test-server",
   "version": "0.0.0",
   "description": "Pact Test Server",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "dependencies": {
     "express": "^4.16.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "pact-node": "file://../pact-node",
+    "superagent": "^4.0.0-beta.5",
+    "supertest": "^3.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand"
   },
   "author": "",
   "license": "MIT"

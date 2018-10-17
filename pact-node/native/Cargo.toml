@@ -1,0 +1,17 @@
+[package]
+name = "pact-node"
+version = "0.0.0"
+authors = ["Ronald Holshausen <uglyog@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "pact_node"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
